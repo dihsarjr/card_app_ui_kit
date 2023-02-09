@@ -35,6 +35,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFh-z8-gSN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhY-9t-PjW">
                                 <rect key="frame" x="71.666666666666686" y="630" width="115" height="50"/>
@@ -61,6 +64,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ANy-fp-SYG" kind="show" id="6eq-WL-HUg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -76,10 +82,32 @@
                             <constraint firstItem="eJ4-ye-iwH" firstAttribute="trailing" secondItem="AAS-Nf-JeK" secondAttribute="trailing" id="oHv-Dd-j0D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="restartButtonOutlet" destination="lhY-9t-PjW" id="JZm-xB-WfW"/>
+                        <outlet property="rulesButtonOutlet" destination="eJ4-ye-iwH" id="pU5-Wq-hDI"/>
+                        <outlet property="stopButtonOutlet" destination="AAS-Nf-JeK" id="RM6-Vv-27i"/>
+                        <outlet property="uiImageView" destination="aaG-0D-5yg" id="6FE-Qu-4aV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="114" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="s16-3a-fDC">
+            <objects>
+                <viewController id="ANy-fp-SYG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zte-2Y-LK6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mcW-zH-WQC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JDW-qI-7Hm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0zL-b9-y6c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="-27"/>
         </scene>
     </scenes>
     <resources>
