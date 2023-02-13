@@ -100,8 +100,31 @@
                     <view key="view" contentMode="scaleToFill" id="zte-2Y-LK6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2H-Zp-1Mu">
+                                <rect key="frame" x="30" y="79" width="333" height="45.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OG-II-95b">
+                                <rect key="frame" x="30" y="174.66666666666663" width="333" height="142.33333333333337"/>
+                                <mutableString key="text">this is the rules of the game this is the rules of the gamethis is the rules of the gamethis is the rules of the gamethis is the rules of the gamethis is the rules of the gamethis is the rules of the gamethis is the rules of the game ♠️ ♠️♠️♠️♠️♠️♠️♠️♠️♠️♠️♠️♠️</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mcW-zH-WQC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mcW-zH-WQC" firstAttribute="trailing" secondItem="X2H-Zp-1Mu" secondAttribute="trailing" constant="30" id="16G-hV-oCe"/>
+                            <constraint firstItem="X2H-Zp-1Mu" firstAttribute="top" secondItem="mcW-zH-WQC" secondAttribute="top" constant="20" id="E43-T3-d71"/>
+                            <constraint firstItem="mcW-zH-WQC" firstAttribute="trailing" secondItem="0OG-II-95b" secondAttribute="trailing" constant="30" id="NqJ-YP-xNZ"/>
+                            <constraint firstItem="0OG-II-95b" firstAttribute="top" secondItem="X2H-Zp-1Mu" secondAttribute="bottom" constant="50" id="fbV-Ds-Ukj"/>
+                            <constraint firstItem="X2H-Zp-1Mu" firstAttribute="leading" secondItem="mcW-zH-WQC" secondAttribute="leading" constant="30" id="q07-b8-Ve5"/>
+                            <constraint firstItem="0OG-II-95b" firstAttribute="leading" secondItem="mcW-zH-WQC" secondAttribute="leading" constant="30" id="zHA-gK-8JJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JDW-qI-7Hm"/>
                 </viewController>
